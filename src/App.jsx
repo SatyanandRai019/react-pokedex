@@ -1,13 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 import Pokedex from './Components/Pokedex/Pokedex'
+import CustomRoutes from './routes/CustomRoutes'
+import { Link } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='app-wrapper'>
-      <Pokedex />
+      <h1 className='pokedex-heading'> 
+        <Link to = '/'> POKEDEX </Link></h1>
+      <CustomRoutes />
     </div>
   )
 }
